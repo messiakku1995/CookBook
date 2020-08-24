@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellRecipeSteps" rowHeight="72" id="KGk-i7-Jjw" customClass="RecipeStepsTableViewCell" customModule="Cookbook" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="465-5e-RlV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hw-YW-56L">
+                                <rect key="frame" x="8" y="8" width="30" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="QyK-mb-JXY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make a spread by mixing together cream cheese, plum chutney, a few drops of tobasco and season with salt and pepper." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsH-sx-Zgs">
+                                <rect key="frame" x="42" y="8" width="270" height="60"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rsH-sx-Zgs" secondAttribute="trailing" constant="8" id="2vl-sr-9w3"/>
+                            <constraint firstItem="rsH-sx-Zgs" firstAttribute="top" secondItem="465-5e-RlV" secondAttribute="top" constant="8" id="DGR-AV-g36"/>
+                            <constraint firstItem="rsH-sx-Zgs" firstAttribute="leading" secondItem="6Hw-YW-56L" secondAttribute="trailing" constant="4" id="FLk-1i-hax"/>
+                            <constraint firstAttribute="bottom" secondItem="6Hw-YW-56L" secondAttribute="bottom" constant="4" id="Vry-Fw-Oe4"/>
+                            <constraint firstItem="6Hw-YW-56L" firstAttribute="top" secondItem="465-5e-RlV" secondAttribute="top" constant="8" id="hiL-IN-WDz"/>
+                            <constraint firstAttribute="bottom" secondItem="rsH-sx-Zgs" secondAttribute="bottom" constant="4" id="vZ0-jf-uYm"/>
+                            <constraint firstItem="6Hw-YW-56L" firstAttribute="leading" secondItem="465-5e-RlV" secondAttribute="leading" constant="8" id="zaA-GC-OEp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="465-5e-RlV" secondAttribute="trailing" id="7FR-zd-RR7"/>
+                    <constraint firstAttribute="bottom" secondItem="465-5e-RlV" secondAttribute="bottom" id="Abf-9y-D88"/>
+                    <constraint firstItem="465-5e-RlV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="icr-uX-hb8"/>
+                    <constraint firstItem="465-5e-RlV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oYG-xI-PGx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblRecipeStep" destination="rsH-sx-Zgs" id="rnu-Oy-ruB"/>
+                <outlet property="lblStepsCount" destination="6Hw-YW-56L" id="mYH-Sr-e1d"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="127.90178571428571"/>
+        </tableViewCell>
+    </objects>
+</document>

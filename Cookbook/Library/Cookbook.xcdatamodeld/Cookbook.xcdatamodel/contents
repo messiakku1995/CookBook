@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Cuisine" representedClassName="Cuisine" syncable="YES" codeGenerationType="class">
+        <attribute name="cuisineId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cuisineImage" optional="YES" attributeType="String"/>
+        <attribute name="cuisineName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Dishes" representedClassName="Dishes" syncable="YES" codeGenerationType="class">
+        <attribute name="dishCuisine" optional="YES" attributeType="String"/>
+        <attribute name="dishId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dishImage" optional="YES" attributeType="String"/>
+        <attribute name="dishName" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="RatingNComments" representedClassName="RatingNComments" syncable="YES" codeGenerationType="class">
+        <attribute name="cuisineId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dishId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Recipe" representedClassName="Recipe" syncable="YES" codeGenerationType="class">
+        <attribute name="cuisineId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dishId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dishImage" optional="YES" attributeType="String"/>
+        <attribute name="recipe" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="UserComments" representedClassName="UserComments" syncable="YES" codeGenerationType="class">
+        <attribute name="comment" optional="YES" attributeType="String"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Dishes" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Recipe" positionX="-54" positionY="18" width="128" height="103"/>
+        <element name="Cuisine" positionX="-36" positionY="45" width="128" height="88"/>
+        <element name="RatingNComments" positionX="-18" positionY="63" width="128" height="88"/>
+        <element name="UserComments" positionX="0" positionY="81" width="128" height="88"/>
+    </elements>
+</model>
